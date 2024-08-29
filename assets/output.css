@@ -1608,6 +1608,16 @@ video {
   left: 25%;
 }
 
+.hover\:after\:bottom-\[2px\]:hover::after{
+  content: var(--tw-content);
+  bottom: 2px;
+}
+
+.hover\:after\:bottom-\[-5px\]:hover::after{
+  content: var(--tw-content);
+  bottom: -5px;
+}
+
 .hover\:after\:h-\[3px\]:hover::after{
   content: var(--tw-content);
   height: 3px;
