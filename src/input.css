@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* .menuIcon>span {
+    display: block;
+    background-image: url("../assets/images/svg/menuicon-svg.svg");
+    width: 24px;
+    height: 16.76px;
+} */
+ .cross span:nth-child(1) {
+     transform: rotate(49deg) translateY(17px);
+     transition: 300ms linear;
+     background: #df4741;
+     width: 35px;
+ }
+
+ .cross span:nth-child(2) {
+     transform: translateX(-100%);
+     opacity: 0;
+     transition: 0.5ms linear;
+ }
+
+ .cross span:nth-child(3) {
+     transform: rotate(-44deg) translateY(-20px);
+     transition: 300ms linear;
+     background: #df4741;
+     width: 35px;
+ }
+
+.cursor_none {
+    pointer-events: none;
+}
+
+.accordian1 {
+    border-radius: 6px;
+    margin-bottom: 24px;
+    padding: 18px 24px 18px 24px;
+    border: solid 1px #d6d6d6;
+    background: #ffffff;
+}
+
+.accordian1.active {
+    box-shadow: 0px 0px 16px 6px #8080801F;
+    border: transparent;
+}
+
+.para {
+    height: 0;
+    overflow: hidden;
+    padding-top: none;
+    transition: all 300ms linear;
+}
+
+
+.accordian1.active .para {
+    height: unset !important;
+    padding-top: 12px;
+
+}
+
+.accordionbtn {
+    cursor: pointer;
+    position: relative;
+    transition: all 300ms linear;
+}
+
+.accordionbtn::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 1.5px;
+    background: #5f5f5f;
+    border-radius: 2px;
+    right: 0;
+    transition: all 300ms linear;
+}
+
+.accordionbtn::before {
+    content: "";
+    position: absolute;
+    width: 1.5px;
+    height: 14px;
+    background: #5f5f5f;
+    border-radius: 2px;
+    right: 6px;
+    transition: all 300ms linear;
+}
+
+.accordian1.active .accordionbtn.accordionbtn::before {
+    height: 0;
+}
+.topBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:639.99px) {
+    .accordian1 {
+        margin-bottom: 16px;
+        padding: 14px 20px 14px 14px;
+        background: #ffffff;
+    }
+}
