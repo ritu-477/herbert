@@ -19,11 +19,6 @@ module.exports = {
       boxShadow: {
         
       "3xl": "0px 0px 16px 6px #8080801F",
-      // "4xl": "0px 0px 16px 6px #8080801F;",
-      //   "5xl": "0px 4px 4px 0px #00000040",
-      //   "6xl": "0px 5px 18px 0px #00000061",
-      //   "7xl": "8px 8px 0px 0px #df4741",
-      //   "8xl": "8px 8px 0px 0px #0F2440",
       },
       backgroundImage: {
         "hero_bg": "url(../assets/images/png/hero-bg.png)",

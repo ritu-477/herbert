@@ -8,568 +8,642 @@
     <link rel="icon" href="">
     <title>Herbert</title>
     <link rel="icon" href="./assets/images/png/fav-icon.png">
+    <!-- Primary Meta Tags -->
+    <title>Herbert</title>
+    <meta name="title" content="Herbert" />
+    <meta name="description" content="Navigating German Bureaucracy with ease" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://herbert-xi.vercel.app/" />
+    <meta property="og:title" content="Herbert" />
+    <meta property="og:description" content="Navigating German Bureaucracy with ease" />
+    <meta property="og:image" content="./meta-tag.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://herbert-xi.vercel.app/" />
+    <meta property="twitter:title" content="Herbert" />
+    <meta property="twitter:description" content="Navigating German Bureaucracy with ease" />
+    <meta property="twitter:image" content="./meta-tag.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
-<body>
-    <!-- ==header -->
-    <header class="bg-hero_bg bg-cover">
-        <nav class="sm:h-[100px] h-[64px] flex justify-center items-center">
-            <div class="container max-w-[1188px] px-6 mx-auto">
-                <div class="flex items-center sm:py-[23px] py-[14px]">
-                    <div class="flex justify-between items-center w-full">
-                        <a href="#">
-                            <img src="./assets/images/png/nav-logo.png" alt="navlogo"
-                                class="sm:w-[180px] sm:h-[54px] w-[117px] h-[36px]">
-                        </a>
-                        <div onclick="openNav()"
-                            class="menuIcon max-lg:w-[40px] max-lg:h-[30px] max-lg:flex max-lg:justify-between z-[15] max-lg:flex-col max-lg:cursor-pointer start-0 transition ease-linear duration-300 hidden">
-                           <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
-                            <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
-                            <span class="max-lg:h-[4px] w-full max-lg:bg-[#000]"></span>
+<body class="overflow_x_hidden">
+    <div class="overflow_x_hidden">
+        <!-- ==header -->
+        <header class="bg-hero_bg bg-cover">
+            <nav class="sm:h-[100px] h-[64px] flex justify-center items-center">
+                <div class="container max-w-[1188px] px-6  mx-auto">
+                    <div class="flex items-center sm:py-[23px] py-[14px]">
+                        <div class="flex justify-between items-center w-full">
+                            <a href="">
+                                <img src="./assets/images/png/nav-logo.png" alt="navlogo"
+                                    class="sm:w-[180px] sm:h-[54px] w-[117px] h-[36px] herbertlogo">
+                            </a>
+                            <div id="menuToggle"
+                                class="menuIcon   max-lg:flex max-lg:justify-between z-[15]  max-lg:cursor-pointer start-0  hidden transition ease-linear duration-300">
+                                <img id="menuIconImage" src="./assets/images/png/menu-icon.png" alt="Menu Icon"
+                                    class="w-full h-full object-cover">
+                            </div>
+                            <div id="menuList"
+                                class="menuList max-lg:px-0 max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-white max-lg:justify-center max-lg:items-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:left-[-100%] max-lg:z-[11] max-lg:ease-in-out max-lg:duration-300 flex items-center overflow-hidden max-lg:right-0">
+                                <ul
+                                    class="lg:gap-[44px] gap-8 flex max-lg:flex-col max-lg:justify-center max-lg:items-center transition ease-linear duration-300 mb-0 ps-0">
+                                    <li class="navlinks">
+                                        <a class="navlinks font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl after:w-0 hover:after:w-[31px] hover:after:h-[3px] after:left-0 hover:after:left-[25%] hover:after:bottom-[-3px] font-Lato after:ease-in-out after:duration-300 hover:text-black max-lg:after:w-[327px] max-lg:after:h-[1px] max-lg:after:absolute max-lg:after:bg-[#d6d6d6] max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6"
+                                            href="#herbert">Herbert</a>
+                                    </li>
+                                    <li class="navlinks">
+                                        <a class=" font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl after:w-0 hover:after:w-[31px] hover:after:h-[3px] after:left-0 hover:after:left-[25%] hover:after:bottom-[-3px] font-Lato after:ease-in-out after:duration-300 hover:text-black max-lg:after:w-[327px] max-lg:after:h-[1px] max-lg:after:absolute max-lg:after:bg-[#d6d6d6] max-lg:after:left-1/2 max-lg:after:-translate-x-1/2 max-lg:after:-bottom-6"
+                                            href="#herbert">Sources</a>
+                                    </li>
+                                    <li class="navlinks">
+                                        <a class="font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl after:w-0 hover:after:w-[31px] hover:after:h-[3px] after:left-0 hover:after:left-[25%] hover:after:bottom-[-3px] font-Lato after:ease-in-out after:duration-300 hover:text-black"
+                                            href="#ourvision">Our Vision</a>
+                                    </li>
+                                    <li class="lg:hidden block">
+                                        <button
+                                            class="py-[14px] px-6 bg-orange rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#ff9748] text-white font-Rubik hover:text-orange hover:bg-white transition ease-linear duration-300 ">Start
+                                            your conversation with Herbert</button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div onclick="openNav()"
-                            class="menuList max-lg:w-full max-lg:h-full max-lg:min-h-screen max-lg:bg-white max-lg:justify-center max-lg:items-center max-lg:flex-col max-lg:fixed max-lg:top-0 max-lg:-right-[-100%] max-lg:z-[11] transition ease-linear duration-300 flex items-center">
-                            <ul
-                                class="lg:gap-[44px] gap-8 flex max-lg:flex-col max-lg:justify-center max-lg:items-center transition ease-linear duration-300 mb-0 ps-0">
-                                <li>
-                                    <a class="font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl hover:after:w-[31px] hover:after:h-[3px] hover:after:left-[25%] hover:after:bottom-[-5px] font-Lato transition ease-in-out duration-300 hover:text-black"
-                                        href="#herbert">Herbert</a>
-                                </li>
-                                <li>
-                                    <a class="font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl hover:after:w-[31px] hover:after:h-[3px] hover:after:left-[25%] hover:after:bottom-[-5px] font-Lato transition ease-in-out duration-300 hover:text-black"
-                                        href="#sources">Sources</a>
-                                </li>
-                                <li>
-                                    <a class="font-normal text-[16px] leading-[24px] text-[#5f5f5f] relative after:absolute hover:after:bg-black hover:after:rounded-xl hover:after:w-[31px] hover:after:h-[3px] hover:after:left-[25%] hover:after:bottom-[-5px] font-Lato transition ease-in-out duration-300 hover:text-black"
-                                        href="#ourvision">Our Vision</a>
-                                </li>
-                            </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- hero-section -->
+            <section class="sm:pt-[139px] sm:pb-[118px] pt-[72px] pb-[80px] relative">
+                <div class="absolute left-[96px] top-[55px] lg:block hidden lg:opacity-[40%] xl:opacity-[100%]"><img
+                        src="./assets/images/png/hello-image.png" alt="hello"
+                        class="w-full max-w-[329.8px] cursor_none">
+                </div>
+                <div class="absolute right-[54.49px] top-[112px] lg:block hidden lg:opacity-[40%] xl:opacity-[100%]">
+                    <img src="./assets/images/png/man-image.png" alt="man-image"
+                        class="max-w-[324.51px] w-full cursor_none">
+                </div>
+                <div class="container max-w-[1188px] px-6 mx-auto">
+                    <div class="flex justify-center flex-col items-center relative z-[1] lg:pb-0 pb-[78px] heroText">
+                        <h1
+                            class="font-Rubik font-semibold sm:text-[56px] text-black text-center max-w-[716px] sm:leading-[66.36px] mx-auto text-[28px] leading-[33.18px]">
+                            Navigating <span class="text-orange_red">German Bureaucracy</span> with ease</h1>
+                        <p
+                            class="font-Lato sm:text-base sm:leading-6 text-[14px] leading-[21px] text-center text-gray sm:pt-4 sm:pb-[42px] pt-[14px] pb-[32px]">
+                            Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
+                        <button
+                            class="py-[14px] px-6 bg-orange rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#ff9748] text-white font-Rubik hover:text-orange hover:bg-white transition ease-linear duration-300 ">Start
+                            your conversation with Herbert</button>
+                    </div>
+                    <div class="lg:hidden flex justify-center">
+                        <img src="./assets/images/png/hello-group.png" alt="group" class="w-full max-w-[330px]">
+                    </div>
+                    <div
+                        class="row heroCard  flex-row flex flex-wrap mx-[-12px] lg:pt-[219px] pt-4 items-center justify-center min-h-[238px]">
+                        <div class="lg:w-[33.33%] sm:w-[50%] w-full px-3 flex justify-center items-center">
+                            <div
+                                class="heroCardAnimation lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-3xl hover:border-none  min-h-[196px] hover:min-h-[238px] zoom_in relative z-[1]">
+                                <img src="./assets/images/svg/forms-svg.svg" alt="forms">
+                                <p
+                                    class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
+                                    Interactive Forms</p>
+                                <p
+                                    class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
+                                    Simplify visa application forms</p>
+                            </div>
+                        </div>
+                        <div
+                            class="heroCardAnimation lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-3 sm:pt-0 flex justify-center items-center">
+                            <div
+                                class="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-3xl hover:border-none hover:min-h-[238px]  min-h-[196px] relative z-[1]">
+                                <img src="./assets/images/svg/checklist-svg.svg" alt="checklist">
+                                <p
+                                    class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
+                                    Document Checklist</p>
+                                <p
+                                    class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
+                                    Personalized document preparation</p>
+                            </div>
+                        </div>
+                        <div
+                            class="heroCardAnimation lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-3 lg:pt-0 flex justify-center items-center">
+                            <div
+                                class="lg:max-w-[364px] max-w-full max-md:max-w-[500px] rounded-lg border w-full border-[#00000029] ease-linear duration-500 bg-white py-5 flex items-center justify-center flex-col hover:shadow-3xl hover:border-none min-h-[196px] hover:min-h-[238px] relative z-[1]">
+                                <img src="./assets/images/svg/language-svg.svg" alt="assistance">
+                                <p
+                                    class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
+                                    Language Assistance</p>
+                                <p
+                                    class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
+                                    German language skills assessment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- Herbert Main Features -->
+        <section class="relative main" id="features">
+            <div class="absolute left-0 lg:hidden block bottom-[25%]"><img src="./assets/images/png/ellips-left.png"
+                    alt="left-ellips" class="max-w-[97.46px] h-[210px]"></div>
+            <div class="absolute left-0 bottom-[30%] z-[-1] lg:block hidden"><img
+                    src="./assets/images/png/features-ellipsleft.png" alt="features-left"
+                    class="w-full max-w-[277.51px] h-[473px]"></div>
+            <div class="absolute right-0 lg:top-[-150px] top-[70px]"><img
+                    src="./assets/images/png/features-ellipsright.png" alt="features-right"
+                    class="w-full lg:max-w-[268px] max-w-[167px] lg:h-[381px] h-[238px]"></div>
+            <div class="container max-w-[1188px] px-6 mx-auto">
+                <h2
+                    class="middleimg font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black">
+                    Herbert Main <span class="text-orange_red">Features</span></h2>
+                <p
+                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-center text-gray max-w-[557px] mx-auto">
+                    Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed.
+                </p>
+                <div class="pt-[56px] lg:flex justify-between hidden">
+                    <div class="max-w-[325px] w-full card_animation">
+                        <div class="max-w-[325px] w-full pb-[56px]">
+                            <div class="flex justify-end pb-4">
+                                <img src="./assets/images/svg/text-one.svg" alt="one">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Find out which
+                                visa
+                                you might want</p>
+                        </div>
+                        <div class="max-w-[325px] w-full pb-[56px]">
+                            <div class="flex justify-end pb-4">
+                                <img src="./assets/images/svg/text-tow.svg" alt="two">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Receive a
+                                checklist
+                                with all necessary documents</p>
+                        </div>
+                        <div class="max-w-[325px] w-full">
+                            <div class="flex justify-end pb-4">
+                                <img src="./assets/images/svg/text-3.svg" alt="three">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Write your CV /
+                                Motivation Letter with Herbert</p>
+                        </div>
+                    </div>
+                    <img src="./assets/images/png/work-tourism.png" alt="tourism"
+                        class="w-full max-w-[344.92px] middleimg">
+                    <div class="max-w-[325px] w-full card_animation2">
+                        <div class="max-w-[325px] w-full pb-[56px]">
+                            <div class="pb-4">
+                                <img src="./assets/images/svg/text-4.svg" alt="four">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black">Help prepare for your visa
+                                interview
+                            </p>
+                        </div>
+                        <div class="max-w-[325px] w-full pb-[56px]">
+                            <div class="pb-4">
+                                <img src="./assets/images/svg/text-5.svg" alt="five">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black">Practice your German
+                                interactively with Herbert</p>
+                        </div>
+                        <div class="max-w-[325px] w-full">
+                            <div class="pb-4">
+                                <img src="./assets/images/svg/text-6.svg" alt="six">
+                            </div>
+                            <p class="font-medium font-Lato text-[20px] leading-6 text-black">Let Herbert guide you
+                                through
+                                your fresh start in Germany once you get there.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block lg:hidden">
+                    <div class="flex justify-center pt-6">
+                        <img src="./assets/images/png/tourism-image.png" alt="tourism-image1"
+                            class="w-full max-w-[286.44px]">
+                    </div>
+                    <div class="flex pt-[44px] gap-[24px] justify-center">
+                        <div class="max-w-[325px] w-full">
+                            <div class="max-w-[325px] w-full pb-[43px]">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-1.svg" alt="number1">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Find out which
+                                    visa
+                                    you might want
+                                </p>
+                            </div>
+                            <div class="max-w-[325px] w-full pb-[24px]">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-3.svg" alt="number3">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Write your CV /
+                                    Motivation Letter with Herbert
+                                </p>
+                            </div>
+                            <div class="max-w-[325px] w-full">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-5.svg" alt="number5">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Practice your
+                                    German
+                                    interactively with Herbert</p>
+                            </div>
+                        </div>
+                        <div class="max-w-[325px] w-full">
+                            <div class="max-w-[325px] w-full pb-[24px]">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-2.svg" alt="number2">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Receive a
+                                    checklist
+                                    with all necessary documents
+                                </p>
+                            </div>
+                            <div class="max-w-[325px] w-full pb-[43px]">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-4.svg" alt="number4">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Help prepare for
+                                    your
+                                    visa interview</p>
+                            </div>
+                            <div class="max-w-[325px] w-full">
+                                <div class="pb-2">
+                                    <img src="./assets/images/svg/number-6.svg" alt="number6">
+                                </div>
+                                <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Let Herbert guide
+                                    you
+                                    through your fresh start
+                                    in Germany once you get there.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <!-- hero-section -->
-        <section class="sm:pt-[139px] sm:pb-[118px] pt-[72px] pb-[80px] relative">
-            <div class="absolute left-[96px] top-[55px] lg:block hidden"><img src="./assets/images/png/hello-image.png"
-                    alt="hello" class="w-full max-w-[329.8px] cursor_none"></div>
-            <div class="absolute right-[54.49px] top-[112px] lg:block hidden"><img
-                    src="./assets/images/png/man-image.png" alt="man-image" class="max-w-[324.51px] w-full cursor_none">
-            </div>
+            <img src="./assets/images/png/layer-bottomfeatures.png" alt="bottom-layer"
+                class="w-full h-[80px] xl:h-[204px]">
+        </section>
+        <!-- Friendly Pricing Plans -->
+        <section class="pricing lg:py-[80px] py-[64px] bg-bg_creamy relative z-[1]" id="plans">
+            <div class="absolute right-0 lg:top-[10%] top-[15%] z-[-1]"><img
+                    src="./assets/images/png/plans-rightellips.png" alt="plans-right"
+                    class="w-full lg:max-w-[258.93px] lg:h-[338px] max-w-[185px] h-[257.62px]"></div>
             <div class="container max-w-[1188px] px-6 mx-auto">
-                <div class="flex justify-center flex-col items-center relative z-[1] lg:pb-0 pb-[78px]">
-                    <h1
-                        class="font-Rubik font-semibold sm:text-[56px] text-black text-center max-w-[716px] sm:leading-[66.36px] mx-auto text-[28px] leading-[33.18px]">
-                        Navigating <span class="text-orange_red">German Bureaucracy</span> with ease</h1>
-                    <p
-                        class="font-Lato sm:text-base sm:leading-6 text-[14px] leading-[21px] text-center text-gray sm:pt-4 sm:pb-[42px] pt-[14px] pb-[32px]">
-                        Herbert Visa: Your AI-powered assistant for German visa and immigration processes</p>
-                    <button
-                        class="py-[14px] px-6 bg-orange rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#ff9748] text-white font-Rubik hover:text-orange hover:bg-white transition ease-linear duration-300">Start
-                        your conversation with Herbert</button>
-                </div>
-                <div class="lg:hidden flex justify-center">
-                    <img src="./assets/images/png/hello-group.png" alt="group" class="w-full max-w-[330px]">
-                </div>
-                <div class="row flex-row flex flex-wrap mx-[-12px] lg:pt-[219px] pt-4 max-lg:justify-center">
-                    <div class="lg:w-[33.33%] sm:w-[50%] w-full px-3">
-                        <div
-                            class="sm:py-[20px] py-[22px] sm:px-[76px] px-[54px] border border-[#d6d6d6] relative z-[1] rounded-[8px] bg-white flex flex-col justify-center items-center hover:shadow-3xl hover:border-transparent hover:py-[41px] hover:translate-y-[-21px] hover:px-[76px] transition ease-linear duration-300">
-                            <img src="./assets/images/svg/forms-svg.svg" alt="forms">
+                <h2
+                    class="pricingText font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black">
+                    Friendly Pricing <span class="text-orange_red ">Plans</span></h2>
+                <p
+                    class="pricingParaText text-[14px] font-Lato sm:text-base sm:leading-6 leading-[21px] font-normal text-center text-gray max-w-[515px] mx-auto">
+                    Lorem ipsum
+                    dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+                <div class="heroCard row flex-row flex flex-wrap mx-[-12px] sm:pt-[56px] pt-[32px] justify-center">
+                    <div
+                        class="heroCardAnimation lg:w-[33.33%] sm:w-[50%] w-full px-3 sm:border-r sm:border-r-[#d6d0cb] border-b border-b-[#d6d0cb] sm:border-b-0 flex lg:justify-start justify-center">
+                        <div class="max-w-[327px] sm:max-w-[308px]">
+                            <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
+                                <p
+                                    class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
+                                    $5/mo</p>
+                                <button
+                                    class="bg-black px-2 py-[5px] rounded-[6px] text-white font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 max-w-[53px] mt-[9px] mb-[9px] font-normal">Basic</button>
+                            </div>
                             <p
-                                class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
-                                Interactive Forms</p>
-                            <p
-                                class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
-                                Simplify visa application forms</p>
+                                class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
+                                Ideal for newcomers! Get quick and reliable answers to your basic questions about German
+                                immigration policies. Perfect
+                                for a brief introduction without long-term commitment.</p>
+                            <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s
+                                included?
+                            </p>
+                            <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
+                                <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
+                                <p class="text-base leading-6 font-Lato font-normal text-gray">10 messages</p>
+                            </div>
+                            <button
+                                class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300 mb-[32px] sm:mb-0">Upgrade
+                                to Basic</button>
                         </div>
                     </div>
-                    <div class="lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-3 sm:pt-0">
-                        <div
-                            class="sm:py-[20px] py-[22px] sm:px-[76px] px-[54px] border border-[#d6d6d6] rounded-[8px] bg-white flex flex-col justify-center items-center hover:shadow-3xl hover:border-transparent hover:py-[41px] hover:translate-y-[-21px] hover:px-[76px] transition ease-linear duration-300">
-                            <img src="./assets/images/svg/checklist-svg.svg" alt="checklist">
+                    <div
+                        class="heroCardAnimation lg:w-[33.33%] sm:w-[50%] w-full pt-[32px] sm:pt-0 lg:border-r lg:border-r-[#d6d0cb] border-b border-b-[#d6d0cb] sm:border-b-0 flex justify-center">
+                        <div class="max-w-[327px] sm:max-w-[308px]">
+                            <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
+                                <p
+                                    class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
+                                    $10/mo</p>
+                                <button
+                                    class="bg-[#ffe36c] px-2 py-[5px] rounded-[6px] text-black font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 mt-[9px] mb-[9px] font-normal">Standard</button>
+                            </div>
                             <p
-                                class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
-                                Document Checklist</p>
-                            <p
-                                class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
-                                Personalized document preparation</p>
+                                class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
+                                Your go-to resource for thorough visa application preparation. Ensure you have all the
+                                necessary information and answers
+                                to confidently navigate the German visa process. </p>
+                            <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s
+                                included?
+                            </p>
+                            <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
+                                <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
+                                <p class="text-base leading-6 font-Lato font-normal text-gray">25 messages</p>
+                            </div>
+                            <button
+                                class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300 mb-[32px] sm:mb-0">Upgrade
+                                to Standard</button>
                         </div>
                     </div>
-                    <div class="lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-3 lg:pt-0">
-                        <div
-                            class="sm:py-[20px] py-[22px] sm:px-[76px] px-[54px] border border-[#d6d6d6] relative z-[1] rounded-[8px] bg-white flex flex-col justify-center items-center hover:shadow-3xl hover:border-transparent hover:py-[41px] hover:translate-y-[-21px] hover:px-[76px] transition ease-linear duration-300">
-                            <img src="./assets/images/svg/language-svg.svg" alt="assistance">
+                    <div
+                        class="heroCardAnimation lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-[32px] lg:pt-0 flex lg:justify-end justify-center">
+                        <div class="max-w-[327px] sm:max-w-[308px]">
+                            <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
+                                <p
+                                    class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
+                                    $20/mo</p>
+                                <button
+                                    class="bg-orange_red px-2 py-[5px] rounded-[6px] text-white font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 mt-[9px] mb-[9px] font-normal">Premium</button>
+                            </div>
                             <p
-                                class="font-Lato font-medium sm:leading-6 sm:text-[20px] text-base leading-[19.2px] text-black sm:pt-4 pt-[14px]">
-                                Language Assistance</p>
-                            <p
-                                class="font-normal sm:text-base sm:leading-6 font-Lato text-gray text-center sm:pt-3 pt-2 text-[14px] leading-[21px]">
-                                German language skills assessment</p>
+                                class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
+                                Have Herbert accompany you throughout your entire visa application journey. With
+                                extensive
+                                message credits, you can ask
+                                questions whenever you need, ensuring a smooth and informed experience.</p>
+                            <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s
+                                included?
+                            </p>
+                            <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
+                                <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
+                                <p class="text-base leading-6 font-Lato font-normal text-gray">50 messages</p>
+                            </div>
+                            <button
+                                class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">Upgrade
+                                to Premium</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </header>
-    <!-- Herbert Main Features -->
-    <section class="relative">
-        <div class="absolute left-0 lg:hidden block bottom-[25%]"><img src="./assets/images/png/ellips-left.png"
-                alt="left-ellips" class="max-w-[97.46px] h-[210px]"></div>
-        <div class="absolute left-0 bottom-[30%] z-[-1] lg:block hidden"><img
-                src="./assets/images/png/features-ellipsleft.png" alt="features-left"
-                class="w-full max-w-[277.51px] h-[473px]"></div>
-        <div class="absolute right-0 lg:top-[-150px] top-[70px]"><img src="./assets/images/png/features-ellipsright.png"
-                alt="features-right" class="w-full lg:max-w-[268px] max-w-[167px] lg:h-[381px] h-[238px]"></div>
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <h2
-                class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black">
-                Herbert Main <span class="text-orange_red">Features</span></h2>
-            <p class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-center text-gray max-w-[557px] mx-auto">
-                Lorem ipsum dolor sit amet consectetur. Tellus ipsum semper eget ornare justo netus proin lacus sed.</p>
-            <div class="pt-[56px] lg:flex justify-between hidden">
-                <div class="max-w-[325px] w-full">
-                    <div class="max-w-[325px] w-full pb-[56px]">
-                        <div class="flex justify-end pb-4">
-                            <img src="./assets/images/svg/text-one.svg" alt="one">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Find out which visa
-                            you might want</p>
-                    </div>
-                    <div class="max-w-[325px] w-full pb-[56px]">
-                        <div class="flex justify-end pb-4">
-                            <img src="./assets/images/svg/text-tow.svg" alt="two">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Receive a checklist
-                            with all necessary documents</p>
-                    </div>
-                    <div class="max-w-[325px] w-full">
-                        <div class="flex justify-end pb-4">
-                            <img src="./assets/images/svg/text-3.svg" alt="three">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black text-end">Write your CV /
-                            Motivation Letter with Herbert</p>
-                    </div>
-                </div>
-                <img src="./assets/images/png/work-tourism.png" alt="tourism" class="w-full max-w-[344.92px]">
-                <div class="max-w-[325px] w-full">
-                    <div class="max-w-[325px] w-full pb-[56px]">
-                        <div class="pb-4">
-                            <img src="./assets/images/svg/text-4.svg" alt="four">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black">Help prepare for your visa
-                            interview
-                        </p>
-                    </div>
-                    <div class="max-w-[325px] w-full pb-[56px]">
-                        <div class="pb-4">
-                            <img src="./assets/images/svg/text-5.svg" alt="five">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black">Practice your German
-                            interactively with Herbert</p>
-                    </div>
-                    <div class="max-w-[325px] w-full">
-                        <div class="pb-4">
-                            <img src="./assets/images/svg/text-6.svg" alt="six">
-                        </div>
-                        <p class="font-medium font-Lato text-[20px] leading-6 text-black">Let Herbert guide you through
-                            your fresh start in Germany once you get there.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="block lg:hidden">
-                <div class="flex justify-center pt-6">
-                    <img src="./assets/images/png/tourism-image.png" alt="tourism-image1"
-                        class="w-full max-w-[286.44px]">
-                </div>
-                <div class="flex pt-[44px] gap-[24px] justify-center">
-                    <div class="max-w-[325px] w-full">
-                        <div class="max-w-[325px] w-full pb-[43px]">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-1.svg" alt="number1">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Find out which visa
-                                you might want
-                            </p>
-                        </div>
-                        <div class="max-w-[325px] w-full pb-[24px]">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-3.svg" alt="number3">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Write your CV /
-                                Motivation Letter with Herbert
-                            </p>
-                        </div>
-                        <div class="max-w-[325px] w-full">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-5.svg" alt="number5">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Practice your German
-                                interactively with Herbert</p>
-                        </div>
-                    </div>
-                    <div class="max-w-[325px] w-full">
-                        <div class="max-w-[325px] w-full pb-[24px]">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-2.svg" alt="number2">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Receive a checklist
-                                with all necessary documents
-                            </p>
-                        </div>
-                        <div class="max-w-[325px] w-full pb-[43px]">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-4.svg" alt="number4">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Help prepare for your
-                                visa interview</p>
-                        </div>
-                        <div class="max-w-[325px] w-full">
-                            <div class="pb-2">
-                                <img src="./assets/images/svg/number-6.svg" alt="number6">
-                            </div>
-                            <p class="font-medium font-Lato text-base leading-[19.2px] text-black">Let Herbert guide you
-                                through your fresh start
-                                in Germany once you get there.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/images/png/layer-bottomfeatures.png" alt="bottom-layer" class="w-full">
-    </section>
-    <!-- Friendly Pricing Plans -->
-    <section class="lg:py-[80px] py-[64px] bg-bg_creamy relative z-[1]">
-        <div class="absolute right-0 lg:top-[10%] top-[15%] z-[-1]"><img src="./assets/images/png/plans-rightellips.png"
-                alt="plans-right" class="w-full lg:max-w-[258.93px] lg:h-[338px] max-w-[185px] h-[257.62px]"></div>
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <h2
-                class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black">
-                Friendly Pricing <span class="text-orange_red">Plans</span></h2>
-            <p
-                class="text-[14px] font-Lato sm:text-base sm:leading-6 leading-[21px] font-normal text-center text-gray max-w-[515px] mx-auto">
-                Lorem ipsum
-                dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
-            <div class="row flex-row flex flex-wrap mx-[-12px] sm:pt-[56px] pt-[32px] justify-center">
-                <div
-                    class="lg:w-[33.33%] sm:w-[50%] w-full px-3 sm:border-r sm:border-r-[#d6d0cb] border-b border-b-[#d6d0cb] sm:border-b-0 flex lg:justify-start justify-center">
-                    <div class="max-w-[327px] sm:max-w-[308px]">
-                        <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
-                            <p
-                                class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
-                                $5/mo</p>
-                            <button
-                                class="bg-black px-2 py-[5px] rounded-[6px] text-white font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 max-w-[53px] mt-[9px] mb-[9px] font-normal">Basic</button>
-                        </div>
-                        <p
-                            class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
-                            Ideal for newcomers! Get quick and reliable answers to your basic questions about German
-                            immigration policies. Perfect
-                            for a brief introduction without long-term commitment.</p>
-                        <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s included?
-                        </p>
-                        <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
-                            <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
-                            <p class="text-base leading-6 font-Lato font-normal text-gray">10 messages</p>
-                        </div>
-                        <button
-                            class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300 mb-[32px] sm:mb-0">Upgrade
-                            to Basic</button>
-                    </div>
-                </div>
-                <div
-                    class="lg:w-[33.33%] sm:w-[50%] w-full pt-[32px] sm:pt-0 lg:border-r lg:border-r-[#d6d0cb] border-b border-b-[#d6d0cb] sm:border-b-0 flex justify-center">
-                    <div class="max-w-[327px] sm:max-w-[308px]">
-                        <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
-                            <p
-                                class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
-                                $10/mo</p>
-                            <button
-                                class="bg-[#ffe36c] px-2 py-[5px] rounded-[6px] text-black font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 mt-[9px] mb-[9px] font-normal">Standard</button>
-                        </div>
-                        <p
-                            class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
-                            Your go-to resource for thorough visa application preparation. Ensure you have all the
-                            necessary information and answers
-                            to confidently navigate the German visa process. </p>
-                        <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s included?
-                        </p>
-                        <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
-                            <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
-                            <p class="text-base leading-6 font-Lato font-normal text-gray">25 messages</p>
-                        </div>
-                        <button
-                            class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300 mb-[32px] sm:mb-0">Upgrade
-                            to Standard</button>
-                    </div>
-                </div>
-                <div class="lg:w-[33.33%] sm:w-[50%] w-full px-3 pt-[32px] lg:pt-0 flex lg:justify-end justify-center">
-                    <div class="max-w-[327px] sm:max-w-[308px]">
-                        <div class="flex max-w-[327px] sm:max-w-[308px] justify-between items-center">
-                            <p
-                                class="font-Rubik font-semibold text-[24px] leading-[28.44px] text-center sm:text-[44px] sm:leading-[52.24px] text-black">
-                                $20/mo</p>
-                            <button
-                                class="bg-orange_red px-2 py-[5px] rounded-[6px] text-white font-Lato text-[12px] leading-[18px] sm:text-base sm:leading-6 mt-[9px] mb-[9px] font-normal">Premium</button>
-                        </div>
-                        <p
-                            class="max-w-[327px] sm:max-w-[308px] font-normal text-[14px] leading-[21px] sm:text-base sm:leading-6 font-Lato pt-[15px] text-gray">
-                            Have Herbert accompany you throughout your entire visa application journey. With extensive
-                            message credits, you can ask
-                            questions whenever you need, ensuring a smooth and informed experience.</p>
-                        <p class="font-bold text-base leading-[22px] text-black sm:pt-[24px] pt-[32px]">What’s included?
-                        </p>
-                        <div class="flex items-center gap-[5px] pt-[24px] sm:pb-[46px] pb-[32px]">
-                            <img src="./assets/images/svg/Check circle.svg" alt="check-circle">
-                            <p class="text-base leading-6 font-Lato font-normal text-gray">50 messages</p>
-                        </div>
-                        <button
-                            class="py-[14px] px-[87px] max-w-[327px] sm:max-w-[308px] bg-orange rounded-lg font-Rubik font-semibold text-base leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">Upgrade
-                            to Premium</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team & Resources -->
-    <section class="bg-team_bg bg-cover lg:mt-[141px] lg:mb-[125px] pt-[64px] pb-[79px] lg:pb-0 lg:pt-0 relative z-[1]">
-        <div class="absolute left-0 lg:block hidden z-[-1]"><img src="./assets/images/png/team-leftvector.png"
-                alt="team-vector" class="max-w-[165.17px] h-[356px] w-full"></div>
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <div class="row flex-row flex flex-wrap mx-[-12px] lg:pb-[142px] pb-0">
-                <div class="lg:w-[41.66%] px-3 w-full flex items-center justify-center lg:pt-[142px] pt-0">
-                    <div class="max-w-[473px]">
-                        <h2
-                            class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] sm:pb-4 pb-[14px] text-black">
-                            Team <span class="text-orange_red">&</span> Resources </h2>
-                        <p class="font-Lato font-normal sm:text-base text-[14px] sm:leading-6 leading-[21px] text-gray">
-                            Lorem ipsum dolor sit amet consectetur.
-                            Tellus ipsum semper eget ornare justo netus proin lacus sed. Vulputate eget
-                            lectus vitae iaculis rhoncus.</p>
-                        <div class="lg:hidden pt-[35px] pb-[32px] flex justify-center">
-                            <img src="./assets/images/png/team-hello.png" alt="team-hello" class="w-full max-w-[261px]">
-                        </div>
-                        <div class="pt-3 ps-3 sm:pb-[42px] pb-[32px]">
-                            <li
-                                class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
-                                Single entrepreneur (yourself)</li>
-                            <li
-                                class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
-                                Outsourced development to freelancers
-                            </li>
-                            <li
-                                class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
-                                Budget: $15,000</li>
-                        </div>
-                        <button
-                            class="py-[14px] px-6 bg-orange rounded-lg font-Rubik font-semibold text-[14px] leading-[16.59px] sm:text-base sm:leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">Learn
-                            more</button>
-                    </div>
-                </div>
-                <div class=" lg:w-[50%] px-3 w-full lg:block hidden">
-                    <div class="absolute right-0 5xl:static z-[-1]">
-                        <img src="./assets/images/png/team-image.png" alt="team-image"
-                            class="w-full max-w-[701px] min-h-[602px]">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Frequently Asked Questions -->
-    <section class="relative z-[1]">
-        <div class="absolute top-[235px] z-[-1]"><img src="./assets/images/png/faq-image.png" alt="faq-image"
-                class="w-full min-h-[686px]">
-        </div>
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <h2
-                class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black">
-                Frequently Asked <span class="text-orange_red">Questions</span></h2>
-            <p
-                class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-center text-gray max-w-[622px] mx-auto">
-                Help users find quick answers to common queries about Herbert, our AI-powered assistant for German visa
-                and immigration
-                processes.</p>
-            <div class="row flex-row flex flex-wrap mx-[-12px] sm:pt-[64px] pt-[32px]">
-                <div class="lg:w-[50%] w-full px-3">
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
-                                What is Herbert?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
-                                How can I access Herbert?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
-                                Is Herbert available in multiple languages?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                </div>
-                <div class="lg:w-[50%] w-full px-3">
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[246px] sm:max-w-full">
-                                How accurate is the information provided by Herbert?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[246px] sm:max-w-full">
-                                How can Herbert help me with my visa application?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                    <div class="accordian1">
-                        <div class="accordionbtn flex justify-between items-center">
-                            <h2
-                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[245px] sm:max-w-full">
-                                Can Herbert help me fill out my visa application forms?</h2>
-                        </div>
-                        <p
-                            class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para max-w-[510px]">
-                            Herbert is an AI-powered assistant designed to help with German visa and immigration
-                            processes. It provides guidance,
-                            answers questions, and helps you navigate the requirements and procedures involved.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center pt-[40px]">
-                <button
-                    class="py-[14px] px-6 bg-orange rounded-lg font-Rubik font-semibold text-[14px] leading-[16.59px] sm:text-base sm:leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">View
-                    All</button>
-            </div>
-        </div>
-    </section>
-    <!-- Need Help in Your Visa? Ask Herbert Now! -->
-    <section class="max-sm:mt-[-100px]">
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <div class="max-w-[1140px] bg-orange rounded-lg lg:py-[64px] lg:px-[67px] p-5 sm:translate-y-[120px] translate-y-[170px]">
-                <h2
-                    class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-white max-w-[632px] mx-auto">
-                    Need Help in Your Visa? Ask Herbert Now!</h2>
-                <p
-                    class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-center text-white max-w-[528px] mx-auto">
-                    Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
-                    nullam.</p>
-                <div class="flex items-center justify-center sm:pt-[42px] sm:gap-[16px] gap-3 flex-wrap pt-[32px]">
-                    <button
-                        class="py-[14px] px-[42px] sm:px-6 bg-white rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#fff] text-orange font-Rubik hover:text-white hover:bg-orange transition ease-linear duration-300 text-nowrap">Start
-                        Start your conversation</button>
-                    <button
-                        class="py-[14px] px-[105px] sm:px-6 text-nowrap bg-orange rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#fff] text-white font-Rubik hover:text-orange hover:bg-white transition ease-linear duration-300">
-                        Learn More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--footer  -->
-    <footer class="bg-bg_creamy pt-[212px]">
-        <div class="container max-w-[1188px] px-6 mx-auto">
-            <div class="row flex-row flex flex-wrap mx-[-12px] justify-between">
-                <div class="lg:w-[41.66%] px-3 w-full">
-                    <a href=""><img src="./assets/images/png/footer-logo.png" alt="footer-logo"
-                            class="sm:max-w-[326px] max-w-[210px] w-full"></a>
+        <!-- Team & Resources -->
+        <section
+            class="teamCard bg-team_bg bg-cover lg:pt-[80px] xl:pt-[141px] xl:mb-[125px] lg:mb-[80px] pt-[64px] max-lg:pb-[79px] relative z-[1]"
+            id="services">
+            <div class="absolute left-0 lg:block hidden z-[-1]"><img src="./assets/images/png/team-leftvector.png"
+                    alt="team-vector" class="max-w-[165.17px] h-[356px] w-full"></div>
+            <div class="container max-w-[1188px] px-6 mx-auto lg:pb-[142px]">
+                <div class="lg:pt-[142px] resourcesTeam">
+                    <h2
+                        class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] sm:pb-4 pb-[14px] text-black">
+                        Team <span class="text-orange_red">&</span> Resources </h2>
                     <p
-                        class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-gray max-w-[412px] pt-[15px]">
-                        Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor
-                        tristique. Purus sed
-                        phasellus metus lectus auctor.</p>
+                        class="font-Lato font-normal sm:text-base text-[14px] sm:leading-6 leading-[21px] text-gray lg:max-w-[473px]">
+                        Lorem ipsum dolor sit amet consectetur.
+                        Tellus ipsum semper eget ornare justo netus proin lacus sed. Vulputate eget
+                        lectus vitae iaculis rhoncus.</p>
+                    <div class="lg:hidden pt-[35px] pb-[32px] flex justify-center">
+                        <img src="./assets/images/png/team-hello.png" alt="team-hello" class="w-full max-w-[261px]">
+                    </div>
+                    <div class="pt-3 ps-3 sm:pb-[42px] pb-[32px]">
+                        <li
+                            class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
+                            Single entrepreneur (yourself)</li>
+                        <li
+                            class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
+                            Outsourced development to freelancers
+                        </li>
+                        <li
+                            class="text-gray font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[28px]">
+                            Budget: $15,000</li>
+                    </div>
+                    <button
+                        class="py-[14px] px-6 bg-orange rounded-lg font-Rubik font-semibold text-[14px] leading-[16.59px] sm:text-base sm:leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">Learn
+                        more</button>
                 </div>
-                <div class="lg:w-[58.33%] px-3 w-full">
-                    <div class="row flex-row flex flex-wrap mx-[-12px] lg:justify-end lg:pt-[16px] pt-[32px]">
-                        <div class="md:w-[25%] px-3 w-[50%]">
-                            <ul class="ps-0 mb-0">
-                                <li
-                                    class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
-                                    Quick Links</li>
-                                <li class="pb-2"><a class="font-Lato font-normal sm:text-base text-sm leading-[21px] text-gray"
-                                        href="">Services</a></li>
-                                <li class="pb-2"><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray"
-                                        href="">About Us</a></li>
-                                <li class="pb-2"><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray"
-                                        href="">Features</a></li>
-                                <li><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray"
-                                        href="">Plans</a></li>
-                            </ul>
+                <div
+                    class="absolute right-0 top-[84px] xl:top-[141px] 5xl:static z-[-1] pb-[80px] xl:pb-[142px] lg:block hidden">
+                    <img src="./assets/images/png/team-image.png" alt="team-image"
+                        class="w-full max-w-[701px] min-h-[602px] xl:opacity-[100%] lg:opacity-[50%] teamImage">
+                </div>
+            </div>
+        </section>
+        <!-- Frequently Asked Questions -->
+        <section class="relative z-[1] faqAsked" id="aboutus">
+            <div class="absolute top-[235px] z-[-1]"><img src="./assets/images/png/faq-image.png" alt="faq-image"
+                    class="w-full min-h-[686px]">
+            </div>
+            <div class="container max-w-[1188px] px-6 mx-auto">
+                <h2
+                    class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-black faqHeading">
+                    Frequently Asked <span class="text-orange_red">Questions</span></h2>
+                <p
+                    class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-center text-gray max-w-[622px] mx-auto accordionPara">
+                    Help users find quick answers to common queries about Herbert, our AI-powered assistant for German
+                    visa
+                    and immigration
+                    processes.</p>
+                <div class="row flex-row flex flex-wrap mx-[-12px] sm:pt-[64px] pt-[32px]">
+                    <div class="lg:w-[50%] w-full px-3 accordionCard">
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
+                                    What is Herbert?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
                         </div>
-                        <div class="md:w-[25%] px-3 w-[50%] flex md:justify-end">
-                            <ul class="ps-0 mb-0">
-                                <li
-                                    class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
-                                    Support</li>
-                                <li class="pb-2"><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray pb-[8px]"
-                                        href="">Help Center</a></li>
-                                <li class="pb-2"><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray"
-                                        href="">Term & Conditions</a></li>
-                                <li><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray"
-                                        href="">Privacy Policy</a></li>
-                            </ul>
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
+                                    How can I access Herbert?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
                         </div>
-                        <div class="md:w-[33.33%] px-3 w-full flex md:justify-end pt-[32px] md:pt-0">
-                            <div class="max-w-[132px]">
-                                <p class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
-                                    Follow Us</p>
-                            <div class="flex gap-3">
-                                <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..." target="_blank" href="https://www.facebook.com/"><img src="./assets/images/svg/facebook-icon.svg" alt="facebook"></a>
-                                <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..." target="_blank" href="https://www.instagram.com/"><img src="./assets/images/svg/insta-icon.svg" alt="instagram"></a>
-                                <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..." target="_blank" href="https://www.linkedin.com/login"><img src="./assets/images/svg/linkedin.svg" alt="linkedin"></a>
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato">
+                                    Is Herbert available in multiple languages?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-[50%] w-full px-3 accordionCard2">
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[246px] sm:max-w-full">
+                                    How accurate is the information provided by Herbert?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
+                        </div>
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[246px] sm:max-w-full">
+                                    How can Herbert help me with my visa application?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
+                        </div>
+                        <div class="accordian1">
+                            <div class="accordionbtn flex justify-between items-center">
+                                <h2
+                                    class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-black font-normal font-Lato max-w-[245px] sm:max-w-full">
+                                    Can Herbert help me fill out my visa application forms?</h2>
+                            </div>
+                            <p
+                                class="text-[14px] sm:text-base sm:leading-6 leading-[21px] text-gray font-normal font-Lato para lg:max-w-[510px]">
+                                Herbert is an AI-powered assistant designed to help with German visa and immigration
+                                processes. It provides guidance,
+                                answers questions, and helps you navigate the requirements and procedures involved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center lg:pt-[40px] pt-[16px] viewButton">
+                    <button
+                        class="py-[14px] px-6 bg-orange rounded-lg font-Rubik font-semibold text-[14px] leading-[16.59px] sm:text-base sm:leading-[18.96px] text-white text-nowrap border border-[#ff9748] hover:text-orange hover:bg-white transition ease-linear duration-300">View
+                        All</button>
+                </div>
+            </div>
+        </section>
+        <!-- Need Help in Your Visa? Ask Herbert Now! -->
+        <section class="max-sm:mt-[-100px">
+            <div class="container max-w-[1188px] px-6 mx-auto">
+                <div
+                    class="max-w-[1140px] bg-orange rounded-lg lg:py-[64px] lg:px-[67px] p-5 sm:translate-y-[120px] translate-y-[170px] needCard">
+                    <h2
+                        class="font-Rubik sm:text-[48px] text-[24px] font-semibold sm:leading-[56.88px] leading-[28.44px] text-center sm:pb-4 pb-[14px] text-white max-w-[632px] mx-auto">
+                        Need Help in Your Visa? Ask Herbert Now!</h2>
+                    <p
+                        class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-center text-white max-w-[528px] mx-auto">
+                        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam
+                        sit
+                        nullam.</p>
+                    <div class="flex items-center justify-center sm:pt-[42px] sm:gap-[16px] gap-3 flex-wrap pt-[32px]">
+                        <button
+                            class="py-[14px] px-[42px] sm:px-6 bg-white rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#fff] text-orange font-Rubik hover:text-white hover:bg-orange transition ease-linear duration-300 text-nowrap">Start
+                            Start your conversation</button>
+                        <button
+                            class="py-[14px] px-[105px] sm:px-6 text-nowrap bg-orange rounded-lg font-semibold sm:text-base sm:leading-[18.96px] text-[14px] leading-[16.59px] border border-[#fff] text-white font-Rubik hover:text-orange hover:bg-white transition ease-linear duration-300">
+                            Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer  -->
+        <footer class="bg-bg_creamy pt-[212px]">
+            <div class="container max-w-[1188px] px-6 mx-auto">
+                <div class="row flex-row flex flex-wrap mx-[-12px] justify-between">
+                    <div class="lg:w-[41.66%] px-3 w-full">
+                        <a href=""><img src="./assets/images/png/footer-logo.png" alt="footer-logo"
+                                class="sm:max-w-[326px] max-w-[210px] w-full"></a>
+                        <p
+                            class="text-[14px] font-normal font-Lato sm:text-base sm:leading-6 leading-[21px] text-gray lg:max-w-[412px] pt-[15px]">
+                            Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor
+                            tristique. Purus sed
+                            phasellus metus lectus auctor.</p>
+                    </div>
+                    <div class="lg:w-[58.33%] px-3 w-full">
+                        <div class="row flex-row flex flex-wrap mx-[-12px] lg:justify-end lg:pt-[16px] pt-[32px]">
+                            <div class="md:w-[25%] px-3 w-[50%]">
+                                <ul class="ps-0 mb-0">
+                                    <li
+                                        class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
+                                        Quick Links</li>
+                                    <li class="pb-2"><a
+                                            class="font-Lato font-normal sm:text-base text-sm leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="#services">Services</a></li>
+                                    <li class="pb-2"><a
+                                            class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="#aboutus">About Us</a></li>
+                                    <li class="pb-2"><a
+                                            class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="#features">Features</a></li>
+                                    <li><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="#plans">Plans</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:w-[25%] px-3 w-[50%] flex md:justify-end">
+                                <ul class="ps-0 mb-0">
+                                    <li
+                                        class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
+                                        Support</li>
+                                    <li class="pb-2"><a
+                                            class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray pb-[8px] hover:text-black transition-all ease-linear duration-300"
+                                            href="">Help Center</a></li>
+                                    <li class="pb-2"><a
+                                            class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="">Term & Conditions</a></li>
+                                    <li><a class="font-Lato font-normal sm:text-base sm:leading-6 text-[14px] leading-[21px] text-gray hover:text-black transition-all ease-linear duration-300"
+                                            href="">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="md:w-[33.33%] px-3 w-full flex md:justify-end pt-[32px] md:pt-0">
+                                <div class="max-w-[132px]">
+                                    <p
+                                        class="font-Lato font-medium sm:text-base sm:leading-[19.2px] text-[14px] leading-[16.8px] text-black pb-[16px]">
+                                        Follow Us</p>
+                                    <div class="flex gap-3">
+                                        <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..."
+                                            target="_blank" href="https://www.facebook.com/"><img
+                                                src="./assets/images/svg/facebook-icon.svg" alt="facebook"></a>
+                                        <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..."
+                                            target="_blank" href="https://www.instagram.com/"><img
+                                                src="./assets/images/svg/insta-icon.svg" alt="instagram"></a>
+                                        <a class="hover:scale-[.95]  transition ease-in-out  duration-300 ..."
+                                            target="_blank" href="https://www.linkedin.com/login"><img
+                                                src="./assets/images/svg/linkedin.svg" alt="linkedin"></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-        <div class=" border-t border-[#d6d0cb] mt-[42px] sm:mt-[50px] py-4 flex items-center justify-center">
-              <p class="font-Lato text-[14px] leading-[21PX] sm:text-base sm:leading-6 font-normal text-gray">Copyright © 2024 herbert, All rights reserved</p>
-        </div>
-        <div class=" opacity-0 fixed bottom-[2%] right-[2%] cursor-pointer duration-300 topBtn z-[2]">
-            <div class="bg-orange w-[40px] h-[40px] rounded-[50%] border border-[#fff] flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-chevron-double-up w-[20px] h-[20px]"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="#ffffff"
-                        d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
-                    <path fill-rule="#ffffff"
-                        d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
-                </svg>
+            <div class=" border-t border-[#d6d0cb] mt-[42px] sm:mt-[50px] py-4 flex items-center justify-center">
+                <p class="font-Lato text-[14px] leading-[21PX] sm:text-base sm:leading-6 font-normal text-gray">
+                    Copyright ©
+                    2024 herbert, All rights reserved</p>
             </div>
-        </div>
-    </footer>
-    <script src="./assets/js/style.js"></script>
+            <div class=" opacity-0 fixed bottom-[2%] right-[2%] cursor-pointer duration-300 topBtn z-[2]">
+                <div
+                    class="bg-orange w-[40px] h-[40px] rounded-[50%] border border-[#fff] flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff"
+                        class="bi bi-chevron-double-up w-[20px] h-[20px]" viewBox="0 0 16 16">
+                        <path fill-rule="#ffffff"
+                            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+                        <path fill-rule="#ffffff"
+                            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                    </svg>
+                </div>
+            </div>
+        </footer>
+
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>gsap.registerPlugin(ScrollTrigger);</script>
+        <script src="./assets/js/style.js"></script>
+    </div>
 </body>
 
 </html>
