@@ -157,7 +157,7 @@ frequentlyAsked.from(".accordionCard2", {
     duration: 1
 }, 0); 
 frequentlyAsked.from(".accordionPara", {
-    x: 1000,
+    x: 1200,
     stagger: 0.3,
     delay: 2,
     duration: 1
