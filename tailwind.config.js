@@ -17,7 +17,6 @@ module.exports = {
         bg_creamy:"#fff8f2",
       },
       boxShadow: {
-        
       "3xl": "0px 0px 16px 6px #8080801F",
       },
       backgroundImage: {
